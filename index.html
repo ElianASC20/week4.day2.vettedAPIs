@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vetted API</title>
+    <script src="sketch.js" defer></script>
+    <link href = 'style.css' rel = 'stylesheet'>
+</head>
+<body style = 'background-color: red;'>
+    <header> 
+      <span><h1 style="color: white; background-color: black; text-align: center;"> Word Movie Project</h1></span>
+ 
+    </header>
+    <!-- ight bet!-->
+<!-- you can add styles to the rest of the website if you want-->
+
+    <!-- you can just leave the div so we can append the image to the div after -->
+<div>   
+</div>
+<div class = 'buttons' id = 'buttons'>
+    <input id= "searchBar" type = 'text' placeholder = 'Enter a word' name= 'serach'>
+    <button id = 'searchBtn' onclick = searchMovie()>Search Word</button>
+    <button id ='clearBtn' onclick="clearContainer()">Clear</button>
+    
+
+
+<script>
+var input = document.getElementById("searchBar");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("searchBtn").click();
+  }
+});
+</script>
+
+</div>
+
+
+</body>
+</html>
